@@ -1,0 +1,62 @@
+[
+    {
+      "id": "vocab_dogma",
+      "front": {
+        "Term": "Dogma",
+        "Part of Speech": "Noun"
+      },
+      "back": {
+        "Definition": "A principle or set of principles laid down by an authority as incontrovertibly true.",
+        "Contexts": ["Religion", "Philosophy", "Ideology"],
+        "Example": "Strict adherence to religious dogma."
+      }
+    },
+    {
+      "id": "vocab_bipartisan",
+      "front": {
+        "Term": "Bipartisan",
+        "Part of Speech": "Adjective"
+      },
+      "back": {
+        "Definition": "Of or involving the agreement or cooperation of two political parties that usually oppose each other's policies.",
+        "Contexts": ["Politics", "Policy"],
+        "Example": "The bill received bipartisan support."
+      }
+    },
+     {
+      "id": "vocab_scalability",
+      "front": {
+        "Term": "Scalability",
+        "Part of Speech": "Noun"
+      },
+      "back": {
+        "Definition": "The ability of a system to handle a growing amount of work, or its potential to be enlarged to accommodate that growth.",
+        "Contexts": ["Engineering", "Artificial Intelligence", "Management"],
+        "Example": "Designing the software with scalability in mind is crucial for future growth."
+      }
+    },
+    {
+      "id": "vocab_synergy",
+      "front": {
+        "Term": "Synergy",
+        "Part of Speech": "Noun"
+      },
+      "back": {
+        "Definition": "The interaction or cooperation of two or more organizations, substances, or other agents to produce a combined effect greater than the sum of their separate effects.",
+        "Contexts": ["Management", "Leadership", "Collaboration"],
+        "Example": "The merger created a synergy that boosted productivity."
+      }
+    },
+     {
+      "id": "vocab_introspection",
+      "front": {
+        "Term": "Introspection",
+        "Part of Speech": "Noun"
+      },
+      "back": {
+        "Definition": "The examination or observation of one's own mental and emotional processes.",
+        "Contexts": ["Personal Growth", "Psychology", "Leadership (self-reflection)"],
+        "Example": "Taking time for introspection can lead to greater self-awareness."
+      }
+    }
+  ]

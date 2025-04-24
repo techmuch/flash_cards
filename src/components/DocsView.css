@@ -1,0 +1,61 @@
+.docs-view {
+    /* Basic container padding/margins are already in DocsView.js inline styles */
+}
+
+.docs-view h2 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.docs-view h3 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.docs-view p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.docs-view ol,
+.docs-view ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.docs-view li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Style for fenced code blocks (pre) */
+.docs-view pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Add horizontal scroll for wide code */
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Style for inline code (code) */
+.docs-view code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+/* Style for code blocks specifically within pre */
+.docs-view pre code {
+     background-color: transparent; /* Don't double-style */
+     padding: 0;
+     border-radius: 0;
+     font-size: 1em; /* Reset font size */
+}

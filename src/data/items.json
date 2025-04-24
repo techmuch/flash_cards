@@ -1,0 +1,72 @@
+[
+  {
+    "id": "vocab_nuance_1",
+    "front": {
+      "Term": "Nuance",
+      "Part of Speech": "Noun",
+      "Synonyms": "Subtlety, Shade"
+    },
+    "back": {
+      "Definition": "A subtle difference in or shade of meaning, expression, or sound.",
+      "Examples": [
+        "Understanding the nuances of the new AI regulation requires examining its impact on various industries.",
+        "The actor conveyed the character's emotions with great nuance."
+      ],
+      "Antonyms": "Obviousness, Bluntness"
+    }
+  },
+  {
+    "id": "science_newton_1",
+    "front": {
+      "Concept": "Newton's First Law",
+      "Also Known As": "Law of Inertia",
+      "Category": "Physics"
+    },
+    "back": {
+      "Statement": "An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.",
+      "Simplified Explanation": "Things keep doing what they're doing unless a force acts on them.",
+      "Implication": "Objects resist changes in their state of motion."
+    }
+  },
+   {
+    "id": "history_ww2_start_date",
+    "front": {
+      "Question": "What event is often considered the start of World War II in Europe?"
+    },
+    "back": {
+      "Answer": "Germany's invasion of Poland",
+      "Date": "September 1, 1939"
+    }
+  },
+  {
+    "id": "ai_llm_def",
+    "front": {
+      "Term": "Large Language Model (LLM)",
+      "Category": "Artificial Intelligence"
+    },
+    "back": {
+      "Definition": "A type of artificial intelligence algorithm that uses deep learning techniques and a massive amount of text data to understand, summarize, generate, and predict new content.",
+      "Key Characteristics": [
+          "Trained on vast datasets",
+          "Uses Transformer architecture",
+          "Generative capabilities",
+          "Few-shot/Zero-shot learning potential"
+      ]
+    }
+  },
+  {
+      "id": "leadership_transformational",
+      "front": {
+          "Leadership Style": "Transformational Leadership"
+      },
+      "back": {
+          "Description": "A leadership style where leaders encourage, inspire, and motivate employees to innovate and create change that will help grow and shape future success.",
+          "Key Components": [
+              "Idealized Influence (Charisma)",
+              "Inspirational Motivation",
+              "Intellectual Stimulation",
+              "Individualized Consideration"
+          ]
+      }
+  }
+]

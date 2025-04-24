@@ -1,0 +1,80 @@
+[
+    {
+      "id": "unique_id_1",
+      "front": {
+        "Term": "Nuance"
+      },
+      "back": {
+        "Definition": "A subtle difference in or shade of meaning, expression, or sound.",
+        "Examples": [
+          "Understanding the nuances of the new AI regulation requires examining its impact on various industries.",
+          "The actor conveyed the character's emotions with great nuance."
+        ]
+      }
+    },
+    {
+      "id": "unique_id_2",
+      "front": {
+        "Term": "Pervasive"
+      },
+      "back": {
+        "Definition": "(Especially of an unwelcome influence or physical effect) Spreading widely throughout an area or a group of people; present in all parts of a thing or place.",
+        "Examples": [
+          "The pervasive influence of social media on modern political discourse is a significant challenge.",
+          "A sense of dread was pervasive in the air."
+        ]
+      }
+    },
+    {
+      "id": "unique_id_3",
+      "front": {
+        "Term": "Salient"
+      },
+      "back": {
+        "Definition": "Most noticeable or important; prominent.",
+        "Examples": [
+          "One of the most salient features of effective leadership is clear communication.",
+          "He highlighted the salient points of the report."
+        ]
+      }
+    },
+    {
+      "id": "unique_id_4",
+      "front": {
+        "Term": "Multifaceted"
+      },
+      "back": {
+        "Definition": "Having many facets or aspects.",
+        "Examples": [
+          "Personal growth is a multifaceted journey.",
+          "The problem is too multifaceted to have a single solution."
+        ]
+      }
+    },
+    {
+      "id": "unique_id_5",
+      "front": {
+        "Term": "Efficacy"
+      },
+      "back": {
+        "Definition": "The ability, especially of something abstract such as a medical treatment or a policy, to produce a desired or intended result.",
+        "Examples": [
+          "Engineers are constantly working to improve the efficacy of machine learning algorithms.",
+          "Studies confirmed the high efficacy of the new drug."
+        ]
+      }
+    },
+    {
+      "id": "unique_id_6",
+      "front": {
+        "Term": "Paradigm"
+      },
+      "back": {
+        "Definition": "A typical example or pattern of something; a model or a distinct set of concepts or thought patterns.",
+        "Examples": [
+          "The development of large language models represents a paradigm shift in AI.",
+          "He challenged the prevailing paradigm in his field."
+        ]
+      }
+    }
+  ]

@@ -1,0 +1,70 @@
+[
+    {
+      "id": "math_linear_eq",
+      "front": {
+        "Concept": "Linear Equation",
+        "Form": "$y = mx + b$",
+        "Variables": "$m$, $b$ are constants"
+      },
+      "back": {
+        "Definition": "An equation that forms a straight line when graphed.",
+        "Meaning of m": "Slope (rate of change)",
+        "Meaning of b": "Y-intercept (where the line crosses the y-axis)"
+      }
+    },
+    {
+      "id": "math_quadratic_formula",
+      "front": {
+        "Concept": "Quadratic Formula",
+        "Used For": "Finding roots of a quadratic equation ($ax^2 + bx + c = 0$)"
+      },
+      "back": {
+        "Formula": "$$x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$$",
+        "Discriminant ($b^2-4ac$)": [
+          "> 0: Two distinct real roots",
+          "= 0: Exactly one real root (a repeated root)",
+          "< 0: Two distinct complex roots"
+        ]
+      }
+    },
+    {
+      "id": "math_pythagorean",
+      "front": {
+        "Theorem": "Pythagorean Theorem",
+        "Applies To": "Right triangles"
+      },
+      "back": {
+        "Statement": "In a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.",
+        "Formula": "$a^2 + b^2 = c^2$",
+        "Variables": "a, b are leg lengths; c is hypotenuse length"
+      }
+    },
+      {
+      "id": "math_slope",
+      "front": {
+        "Concept": "Slope of a Line",
+        "Measure Of": "Steepness and direction"
+      },
+      "back": {
+        "Definition": "The ratio of the vertical change (rise) to the horizontal change (run) between any two distinct points on a line.",
+        "Formula": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$",
+        "Interpretation": [
+          "Positive slope: line rises from left to right",
+          "Negative slope: line falls from left to right",
+          "Zero slope: horizontal line",
+          "Undefined slope: vertical line"
+        ]
+      }
+    },
+     {
+      "id": "math_domain_range",
+      "front": {
+        "Concepts": "Domain and Range",
+        "Related To": "Functions"
+      },
+      "back": {
+        "Domain": "The set of all possible input values (x-values) for which a function is defined.",
+        "Range": "The set of all possible output values (y-values) of a function."
+      }
+    }
+  ]
