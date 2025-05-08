@@ -93,6 +93,7 @@ function QuizArea({ quizItems, quizMode }) { // --- ENSURE PROPS ARE DESTRUCTURE
 
 
   // --- DERIVED STATE / VARIABLES (Must be INSIDE the component function) ---
+  // eslint-disable-next-line no-unused-vars -- currentItem is used in JSX conditional rendering
   const currentItem = shuffledItems[currentIndex]; // --- Use state variables ---
 
    // Determine which content object is the prompt and which is the answer
