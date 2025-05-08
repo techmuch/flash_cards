@@ -77,6 +77,7 @@ function QuizArea({ quizItems, quizMode }) { // --- ENSURE PROPS ARE DESTRUCTURE
           setCurrentCardPromptSide('front'); // --- Use state setter ---
           return;
       }
+       // eslint-disable-next-line
        const currentItem = items[index];
 
       if (mode === 'front-to-back') {
