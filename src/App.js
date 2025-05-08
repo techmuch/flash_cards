@@ -6,7 +6,7 @@ import DocsView from './components/DocsView';
 
 import './App.css';
 
-// --- Function to prepare quiz items based on selected files and mode ---
+// --- Function to prepare quiz items based on selected files ---
 // Now takes the entire data object {filename: itemsArray} and selectedFiles array
 const prepareQuizItems = (allData, selectedFiles) => { // Removed 'mode' from args, QuizArea handles random logic
   if (!allData || !selectedFiles || selectedFiles.length === 0) return [];
@@ -58,8 +58,8 @@ function App() {
 
 
   // Keys for localStorage
-  const localStorageDataKey = 'flashcardQuizData';
-  const localStorageModeKey = 'flashcardQuizMode';
+  const localStorageDataKey = 'flashcardQuizData'; // Changed key name
+  const localStorageModeKey = 'flashcardQuizMode'; // Changed key name
 
   // Load data and mode from localStorage on initial mount
   useEffect(() => {
@@ -200,11 +200,17 @@ function App() {
 
    // --- View Switching Handlers ---
    const startQuiz = () => {
-       if (preparedQuizItems && preparedQuizItems.length > 0) {
-           setCurrentView('quiz');
-            console.log("Starting quiz...");
+       // Check if there are selected files AND if preparing those files results in items
+       if (selectedFiles && selectedFiles.length > 0) {
+            const itemsToQuiz = prepareQuizItems(quizData, selectedFiles);
+            if (itemsToQuiz && itemsToQuiz.length > 0) {
+                setCurrentView('quiz');
+                console.log("Starting quiz...");
+            } else {
+                alert("Selected files contain no valid flashcard items.");
+            }
        } else {
-           alert("Please select files that contain valid flashcard items to start the quiz.");
+           alert("Please select at least one file from the list above to start the quiz.");
        }
    };
 
@@ -230,10 +236,12 @@ function App() {
     return <div className="App"><p>Loading...</p></div>;
   }
 
-  // Determine state for conditional rendering and button enabling
+  // --- Determine state for conditional rendering and button enabling ---
+  // Keep hasLoadedData as it's used to show/hide the file list section
   const hasLoadedData = quizData && Object.keys(quizData).length > 0;
-  const hasSelectedFiles = selectedFiles && selectedFiles.length > 0;
-  const hasPreparedItems = preparedQuizItems && preparedQuizItems.length > 0;
+
+  // Removed unused hasSelectedFiles and hasPreparedItems from here
+  // They are checked directly where needed (e.g., in startQuiz or passed as props)
 
 
   return (
@@ -261,12 +269,12 @@ function App() {
       {currentView === 'manage' && (
           <ManageView
               quizData={quizData}
-              selectedFiles={selectedFiles}
-              quizMode={quizMode}
+              selectedFiles={selectedFiles} // Pass selectedFiles as prop
+              quizMode={quizMode} // Pass quizMode as prop
               handleFileUpload={handleFileUpload}
               handleRemoveAll={handleRemoveAll}
-              handleFileSelectChange={handleFileSelectChange}
-              handleModeChange={handleModeChange}
+              handleFileSelectChange={handleFileSelectChange} // Pass handler as prop
+              handleModeChange={handleModeChange} // Pass handler as prop
               onStartQuiz={startQuiz} // Pass the startQuiz handler
           />
       )}

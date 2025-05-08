@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'; // --- ENSURE useState and useEffect ARE IMPORTED ---
-import ContentDisplay from './ContentDisplay'; // --- ENSURE ContentDisplay IS IMPORTED ---
+import React, { useState, useEffect } from 'react';
+// Ensure useState and useEffect are imported
+// --- Import ContentDisplay from its new file ---
+import ContentDisplay from './ContentDisplay';
 
 
 // Helper component to render object content dynamically (Assuming this is defined correctly in ContentDisplay.js)
@@ -181,15 +183,19 @@ function QuizArea({ quizItems, quizMode }) { // --- ENSURE PROPS ARE DESTRUCTURE
         title="Click to toggle answer"
       >
         <h4 style={{ width: '100%', textAlign: 'center', marginBottom: '20px', textDecoration: 'underline' }}>Prompt</h4>
+        {/* --- Use ContentDisplay for prompt content --- */}
         {currentItem && promptContent && <ContentDisplay content={promptContent} />} {/* Use derived variables */}
-        {!currentItem || !promptContent && <p>No prompt content.</p>}
+        {/* --- FIX: Clarify OR and AND with parentheses --- */}
+        {(!currentItem || !promptContent) && <p>No prompt content.</p>}
 
 
         {showAnswer && (
           <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid #eee', width: '100%' }}>
             <h4 style={{ width: '100%', textAlign: 'center', marginBottom: '20px', textDecoration: 'underline' }}>Answer</h4>
+             {/* --- Use ContentDisplay for answer content --- */}
             {currentItem && answerContent && <ContentDisplay content={answerContent} />} {/* Use derived variables */}
-             {!currentItem || !answerContent && <p>No answer content.</p>}
+            {/* --- FIX: Clarify OR and AND with parentheses --- */}
+             {(!currentItem || !answerContent) && <p>No answer content.</p>}
           </div>
         )}
       </div>
